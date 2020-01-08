@@ -22,32 +22,6 @@ $(function(){
     });
 });
 
-// $(function(){
-//     $('.toggle-menu').on('click',function(){
-//         $('.mobile-menu').toggleClass('show');
-//         $( ".toggle-menu" ).toggleClass( "menu-on");
-//     });
-// });
-//
-// $(document).ready(function() {
-//     $('.mobile-menu').click(function () {
-//         $('.mobile-menu').removeClass('show');
-//         $('.toggle-menu').removeClass('menu-on');
-//     });
-//
-//     $(document).ready(function() {
-//         $('.nav-link-new').click(function () {
-//             $('.mobile-menu').removeClass('show');
-//             $('.toggle-menu').removeClass('menu-on');
-//         });
-//
-//         $('.cls').click(function () {
-//             $('.mobile-menu').removeClass('show');
-//             $('.toggle-menu').removeClass('menu-on');
-//         });
-//     });
-// });
-
 //slider for "office"
 
 $('.slider-for').slick({
@@ -115,15 +89,6 @@ $('.soffits-slider').slick({
                 autoplay: false,
             }
         },
-
-        // {
-        //     breakpoint: 371,
-        //     settings: {
-        //         slidesToShow: 1,
-        //         arrows: false,
-        //         autoplay: false,
-        //     }
-        // }
     ]
 });
 
@@ -163,49 +128,23 @@ $('.reviews-slider').slick({
     ]
 });
 
-//slider for "certificates"
+//slider for "models"
 
-$('.certificates-slider').slick({
-    slidesToShow: 3,
+$('.models-slider').slick({
+    slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
-    arrows: false,
-    dots: false,
-    centerMode: true,
-    slickGoTo: 2,
-    centerPadding: '0px',
+    arrows: true,
+    dots: true,
     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-    responsive: [
-        {
-            breakpoint: 993,
-            settings: {
-                centerPadding: '0px',
-                slidesToShow: 3,
-            }
-        },
-
-        {
-            breakpoint: 769,
-            settings: {
-                centerPadding: '0px',
-                slidesToShow: 2,
-            }
-        },
-
-        {
-            breakpoint: 411,
-            settings: {
-                slidesToShow: 1,
-                arrows: false,
-            }
-        },
-    ]
 });
 
 //scroll
 
 $('.nav-link-new').mPageScroll2id();
+
+//video popup
 
 $(document).ready(function() {
     $('.popup-youtube').magnificPopup({
@@ -219,3 +158,23 @@ $(document).ready(function() {
     });
 });
 
+///////////
+$(document).ready(function() {
+    $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+                return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+            }
+        }
+    });
+});

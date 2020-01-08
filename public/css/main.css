@@ -276,16 +276,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 20px; }
     .banner .order p {
       margin-bottom: 0;
-      font-size: 15px;
+      font-size: 20px;
       font-weight: 700;
       font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
@@ -303,11 +303,11 @@
       letter-spacing: -.02em;
       text-transform: uppercase;
       text-align: center;
-      background-color: transparent;
+      background-color: #c4956a;
       color: #FFFFFF;
       border-radius: 0; }
       .banner .order .btn:hover {
-        background-color: #c4956a; }
+        background-color: transparent; }
 
 .agent {
   background: #ffffff;
@@ -395,731 +395,325 @@
       color: #000;
       max-width: 252px; }
 
-.venecja {
-  padding-top: 120px;
-  background: #ffffff;
-  position: relative; }
-  .venecja .vector-top {
-    width: 346px;
-    height: 304px;
-    position: absolute;
-    bottom: 124px;
-    right: 0; }
-  .venecja .vector-bottom {
-    width: 222px;
-    height: 390px;
-    position: absolute;
-    bottom: -305px;
-    right: 0; }
-  .venecja .caption {
+.models {
+  padding: 80px 0;
+  position: relative;
+  background-color: #f5f5f5; }
+  .models .caption {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 700;
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 900;
+    text-transform: uppercase;
     font-size: 30px;
-    line-height: 147.69%;
-    text-transform: uppercase;
-    color: #08203E;
-    margin-bottom: 91px;
-    position: relative;
-    margin-left: auto;
-    margin-top: 42px;
-    display: inline-block;
-    max-width: 640px;
-    z-index: 2; }
-    .venecja .caption strong {
-      font-family: "Open Sans", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 147.69%;
-      color: #ED1D24;
-      position: absolute;
-      bottom: -24px;
-      right: 0; }
-    .venecja .caption:before {
-      position: absolute;
-      content: "";
-      display: block;
-      width: 1px;
-      height: 55px;
-      background: #ED1D24;
-      top: -62px;
-      left: 0; }
-    .venecja .caption:after {
-      position: absolute;
-      content: "";
-      display: block;
-      width: 96%;
-      height: 1px;
-      background: #ED1D24;
-      bottom: -14px;
-      left: 0; }
-  .venecja .right {
-    margin-top: -200px; }
-  .venecja .image-roof {
-    max-width: 627px;
-    max-height: 304px;
-    z-index: 1;
-    margin-bottom: 50px; }
-  .venecja .colors {
+    letter-spacing: -.02em;
+    color: #000;
+    text-align: center; }
+  .models .title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
-    .venecja .colors .color-img {
-      max-width: 92px;
-      max-height: 92px;
-      -webkit-box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
-      box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
-      margin-right: 15px; }
-      .venecja .colors .color-img:last-child {
-        margin-right: 0; }
-  .venecja .image-venecja {
-    max-width: 404px;
-    max-height: 218px;
-    margin-left: auto;
-    margin-right: 35px;
-    margin-bottom: 73px; }
-  .venecja .title {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px; }
+    .models .title p {
+      font-weight: 700;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: -.02em;
+      margin-right: 20px;
+      color: #c4956a;
+      font-size: 20px;
+      margin-bottom: 0; }
+    .models .title .image-logo {
+      max-width: 140px;
+      max-height: 60px; }
+  .models p {
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 147.69%;
-    text-transform: uppercase;
-    color: #08203E;
-    margin-bottom: 18px; }
-    .venecja .title span {
-      color: #ED1D24; }
-  .venecja .text {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
-    line-height: 180%;
-    color: #000000;
-    margin-bottom: 96px;
-    max-width: 455px; }
-    .venecja .text span {
-      font-weight: 600;
-      color: #ED1D24; }
-  .venecja .button-one {
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: -.02em;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    max-width: 410px; }
+  .models .button {
+    margin-top: 60px; }
+  .models .btn {
     display: inline-block;
-    background: #ED1D24;
-    -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    border: 2px solid #ED1D24;
-    margin-right: 10px;
-    z-index: 2; }
-    .venecja .button-one .btn {
-      font-family: "Open Sans", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 18px;
-      letter-spacing: 0.1em;
-      text-align: center;
-      color: #FFFFFF;
-      padding: 17px 62px; }
-    .venecja .button-one:hover {
-      background: #fff; }
-      .venecja .button-one:hover .btn {
-        color: #ED1D24; }
-  .venecja .buttons {
+    padding: 10px 30px;
+    font-size: 15px;
+    line-height: 1.5;
+    border: 1px solid #c4956a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #c4956a;
+    color: #FFFFFF;
+    border-radius: 0; }
+    .models .btn:hover {
+      background-color: transparent;
+      color: #c4956a; }
+  .models .gallery-image {
+    max-width: 535px;
+    max-height: 429px; }
+  .models .models-slider {
+    outline: none; }
+  .models .row {
+    margin-bottom: 80px; }
+  .models .last {
+    margin-bottom: 0; }
+  .models .slick-prev:before, .models .slick-next:before {
+    font-size: 1px; }
+  .models .slick-prev.slick-arrow {
+    left: 0; }
+  .models .slick-next {
+    right: 0; }
+  .models .slick-prev, .models .slick-next {
+    top: 50%;
+    font-size: 16px;
+    line-height: 0;
+    position: absolute;
+    display: block;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #c4956a;
+    border: 1px solid #c4956a;
+    outline: none;
+    background: #fff;
+    z-index: 1; }
+  .models .slick-prev:active, .models .slick-next:active {
+    color: #fff;
+    border: 1px solid #c4956a;
+    background: #c4956a; }
+  .models .slick-dots {
+    position: absolute;
+    bottom: -40px;
+    display: block;
+    width: 25%;
+    list-style: none;
+    text-align: center;
+    right: 32.5%; }
+  .models .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    cursor: pointer;
+    margin: 0 23px 0 5px;
+    border: 1px #c4956a solid;
+    border-radius: 50%; }
+  .models .slick-dots li.slick-active {
+    position: relative;
+    display: inline-block;
+    border: 1px #c4956a solid;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: #c4956a;
+    border-radius: 50%; }
+  .models .slick-dots li button:before {
+    content: ""; }
+
+.specialist {
+  padding: 80px 0 0 0;
+  position: relative;
+  background-color: #fff; }
+  .specialist .title {
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -.02em;
+    margin-right: 20px;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 0; }
+  .specialist .holder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-  .venecja .button-second {
-    display: inline-block;
-    background: #ED1D24;
-    -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    border: 2px solid #ED1D24;
-    z-index: 2; }
-    .venecja .button-second .btn {
-      font-family: "Open Sans", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 18px;
-      letter-spacing: 0.1em;
-      text-align: center;
-      color: #FFFFFF;
-      padding: 17px 44px; }
-    .venecja .button-second:hover {
-      background: #fff; }
-      .venecja .button-second:hover .btn {
-        color: #ED1D24; }
-  .venecja .venecja-info {
-    padding-top: 77px; }
-    .venecja .venecja-info .item {
-      position: relative;
+    .specialist .holder .image {
+      max-width: 243px;
+      max-height: 480px; }
+    .specialist .holder .fa-check-circle {
+      font-size: 25px;
+      color: #c4956a;
+      margin-right: 10px; }
+    .specialist .holder li {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      font-weight: 400;
+      letter-spacing: -.02em;
+      color: rgba(0, 0, 0, 0.7);
+      margin-bottom: 20px;
+      padding: 20px 0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center;
-      z-index: 2; }
-    .venecja .venecja-info .image-info {
-      max-width: 426px;
-      max-height: 162px;
-      margin-bottom: 28px;
-      -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); }
-    .venecja .venecja-info p {
+      align-items: center; }
+  .specialist .form-title {
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -.02em;
+    margin-right: 20px;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 105px; }
+  .specialist form {
+    margin: 0 auto;
+    max-width: 530px;
+    background: #282828;
+    border-radius: 7px;
+    padding: 42px 45px 50px;
+    -webkit-box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF; }
+    .specialist form input {
+      display: block;
+      width: 100%;
+      min-height: 42px;
+      padding: 9px 0;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -.02em;
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       font-family: "Montserrat", sans-serif;
       font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 180%;
-      text-align: center;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #08203E;
-      margin-bottom: 0; }
-  @media (max-width: 1125px) {
-    .venecja .button-one .btn {
-      padding: 17px 55px; }
-    .venecja .button-second .btn {
-      padding: 17px 21px; } }
-  @media (max-width: 991px) {
-    .venecja {
-      padding: 80px 0 0 0;
-      text-align: center; }
-      .venecja .center {
-        text-align: center; }
-      .venecja .right {
-        margin-top: 0; }
-      .venecja .caption {
-        margin-top: 0;
-        margin-bottom: 40px; }
-        .venecja .caption:before {
-          display: none; }
-      .venecja .image-roof {
-        margin: 40px auto 40px; }
-      .venecja .colors {
-        margin-bottom: 40px; }
-      .venecja .image-venecja {
-        margin-right: auto;
-        margin-bottom: 40px; }
-      .venecja .title {
-        text-align: center; }
-      .venecja .text {
-        text-align: center;
-        margin-bottom: 40px;
-        max-width: 100%; }
-      .venecja .vector {
-        display: none; }
-      .venecja .buttons {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center; }
-        .venecja .buttons .button-one {
-          margin-right: 49px; }
-      .venecja .venecja-info {
-        padding-top: 40px; }
-        .venecja .venecja-info .item {
-          margin-bottom: 28px; }
-      .venecja .button-one .btn {
-        padding: 17px 62px; }
-      .venecja .button-second .btn {
-        padding: 17px 44px; } }
-  @media (max-width: 768px) {
-    .venecja {
-      padding: 40px 0 0 0; }
-      .venecja .text {
-        margin-bottom: 20px; }
-      .venecja .caption {
-        margin-bottom: 20px;
-        font-size: 25px;
-        line-height: 138.18%; }
-        .venecja .caption strong {
-          bottom: -18px; }
-        .venecja .caption:after {
-          left: 0;
-          right: 0;
-          bottom: -9px;
-          margin: auto; }
-      .venecja .image-roof {
-        margin: 20px auto 20px; }
-      .venecja .colors, .venecja .image-venecja {
-        margin-bottom: 20px; }
-      .venecja .venecja-info {
-        padding-top: 20px; }
-        .venecja .venecja-info .item {
-          margin-bottom: 20px; } }
-  @media (max-width: 576px) {
-    .venecja .caption {
-      font-size: 20px; } }
-  @media (max-width: 508px) {
-    .venecja .buttons {
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-      .venecja .buttons .button-one {
-        margin-right: 7px;
-        margin-left: 7px; }
-      .venecja .buttons .button-second {
-        margin-right: 7px;
-        margin-left: 7px; } }
-  @media (max-width: 487px) {
-    .venecja .buttons .button-one {
-      margin-bottom: 20px; }
-      .venecja .buttons .button-one .btn {
-        padding: 17px 74px; } }
-
-.murano {
-  padding-top: 58px;
-  padding-bottom: 85px;
-  background: #ffffff;
-  overflow: hidden; }
-  .murano .vector {
-    width: 390px;
-    height: 304px;
-    position: absolute;
-    bottom: -160px;
-    left: 228px; }
-  .murano .image-roof {
-    max-width: 627px;
-    max-height: 304px;
-    z-index: 1;
-    margin-top: 100px;
-    margin-bottom: 50px; }
-  .murano .colors {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
-    .murano .colors .color-img {
-      max-width: 92px;
-      max-height: 92px;
-      -webkit-box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
-      box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
-      margin-right: 15px; }
-      .murano .colors .color-img:last-child {
-        margin-right: 0; }
-  .murano .image-murano {
-    max-width: 206px;
-    max-height: 157px;
-    margin-left: 54px;
-    margin-bottom: 27px; }
-  .murano .title {
+      background: transparent;
+      outline: none;
+      color: #FFFFFF; }
+    .specialist form input[type="text"] {
+      margin-bottom: 24px; }
+    .specialist form input[type="tel"] {
+      margin-bottom: 42px; }
+    .specialist form input:focus {
+      outline: none; }
+    .specialist form input::-webkit-input-placeholder {
+      color: #FFFFFF; }
+    .specialist form input::-ms-input-placeholder {
+      color: #FFFFFF; }
+    .specialist form input::-ms-input-placeholder {
+      color: #FFFFFF; }
+    .specialist form input:-ms-input-placeholder {
+      color: #FFFFFF; }
+    .specialist form input::placeholder {
+      color: #FFFFFF; }
+  .specialist button {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 15px;
+    line-height: 1.5;
+    border: 1px solid #c4956a;
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 147.69%;
+    font-weight: 700;
+    letter-spacing: -.02em;
     text-transform: uppercase;
-    color: #08203E;
-    margin-bottom: 18px; }
-    .murano .title span {
-      color: #ED1D24; }
-  .murano .text {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 180%;
-    color: #000000;
-    margin-bottom: 70px;
-    max-width: 480px; }
-    .murano .text span {
-      font-weight: 600;
-      color: #ED1D24; }
-  .murano .text-murano {
-    margin-bottom: 28px; }
-  .murano .buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    max-width: 465px; }
-  .murano .button-one {
-    display: inline-block;
-    background: #ED1D24;
-    -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    border: 2px solid #ED1D24;
-    margin-right: 10px; }
-    .murano .button-one .btn {
-      font-family: "Open Sans", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 18px;
-      letter-spacing: 0.1em;
-      text-align: center;
-      color: #FFFFFF;
-      padding: 17px 62px; }
-    .murano .button-one:hover {
-      background: #fff; }
-      .murano .button-one:hover .btn {
-        color: #ED1D24; }
-  .murano .button-second {
-    display: inline-block;
-    background: #ED1D24;
-    -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    border: 2px solid #ED1D24; }
-    .murano .button-second .btn {
-      font-family: "Open Sans", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 18px;
-      letter-spacing: 0.1em;
-      text-align: center;
-      color: #FFFFFF;
-      padding: 17px 44px; }
-    .murano .button-second:hover {
-      background: #fff; }
-      .murano .button-second:hover .btn {
-        color: #ED1D24; }
-  @media (max-width: 991px) {
-    .murano {
-      padding-top: 0;
-      padding-bottom: 80px; }
-      .murano .vector {
-        display: none; }
-      .murano .image-murano {
-        margin-left: auto;
-        margin-right: auto; }
-      .murano .title {
-        text-align: center; }
-      .murano .text {
-        text-align: center;
-        max-width: 100%;
-        margin-bottom: 40px; }
-      .murano .text-murano {
-        margin-bottom: 15px; }
-      .murano .buttons {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        max-width: 100%; }
-        .murano .buttons .button-one {
-          margin-right: 49px; }
-      .murano .image-roof {
-        margin: 40px auto; } }
-  @media (max-width: 768px) {
-    .murano {
-      padding-top: 0;
-      padding-bottom: 40px; }
-      .murano .text {
-        margin-bottom: 20px; }
-      .murano .caption {
-        margin-bottom: 20px;
-        font-size: 25px;
-        line-height: 138.18%; }
-        .murano .caption strong {
-          bottom: -18px; }
-        .murano .caption:after {
-          left: 0;
-          right: 0;
-          bottom: -9px;
-          margin: auto; }
-      .murano .image-murano {
-        margin-bottom: 20px; } }
-  @media (max-width: 576px) {
-    .murano .caption {
-      font-size: 20px; } }
-  @media (max-width: 508px) {
-    .murano .buttons {
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-      .murano .buttons .button-one {
-        margin-right: 7px;
-        margin-left: 7px; }
-      .murano .buttons .button-second {
-        margin-right: 7px;
-        margin-left: 7px; } }
-  @media (max-width: 487px) {
-    .murano .buttons .button-one {
-      margin-bottom: 20px; }
-      .murano .buttons .button-one .btn {
-        padding: 17px 74px; } }
+    text-align: center;
+    background-color: #c4956a;
+    color: #FFFFFF;
+    border-radius: 0; }
+    .specialist button:hover {
+      background-color: transparent;
+      color: #c4956a; }
 
-.ferrara {
-  padding-top: 29px;
-  background: #ffffff;
-  position: relative; }
-  .ferrara .vector-top {
-    width: 346px;
-    height: 304px;
-    position: absolute;
-    bottom: 124px;
-    right: 0; }
-  .ferrara .vector-bottom {
-    width: 222px;
-    height: 390px;
-    position: absolute;
-    bottom: -345px;
-    right: 0; }
-  .ferrara .caption {
+.use {
+  padding: 80px 0;
+  position: relative;
+  background-color: #f5f5f5; }
+  .use .caption {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 700;
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 900;
+    text-transform: uppercase;
     font-size: 30px;
-    line-height: 147.69%;
-    text-transform: uppercase;
-    color: #08203E;
-    margin-bottom: 26px;
+    letter-spacing: -.02em;
+    color: #000;
+    text-align: center; }
+  .use .item {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 30px;
+    cursor: pointer;
+    margin: 10px 0;
     position: relative;
-    margin-left: auto;
-    margin-top: 42px; }
-    .ferrara .caption strong {
-      font-family: "Open Sans", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 147.69%;
-      color: #ED1D24;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .use .item:hover p {
+      color: #c4956a; }
+    .use .item span {
+      font-size: 45px;
       position: absolute;
-      bottom: -24px;
-      right: 0; }
-    .ferrara .caption:before {
-      position: absolute;
-      content: "";
-      display: block;
-      width: 1px;
-      height: 55px;
-      background: #ED1D24;
-      top: -62px;
-      left: 0; }
-    .ferrara .caption:after {
-      position: absolute;
-      content: "";
-      display: block;
-      width: 96%;
-      height: 1px;
-      background: #ED1D24;
-      bottom: -14px;
-      left: 0; }
-  .ferrara .image-roof {
-    max-width: 627px;
-    max-height: 304px;
-    z-index: 1;
-    margin-top: 105px;
-    margin-bottom: 50px; }
-  .ferrara .colors {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
-    .ferrara .colors .color-img {
-      max-width: 92px;
-      max-height: 92px;
-      -webkit-box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
-      box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
-      margin-right: 15px; }
-      .ferrara .colors .color-img:last-child {
-        margin-right: 0; }
-  .ferrara .image-ferrara {
-    max-width: 215px;
-    max-height: 185px;
-    margin-left: auto;
-    margin-right: 130px; }
-  .ferrara .title {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 147.69%;
-    text-transform: uppercase;
-    color: #08203E;
-    margin-bottom: 18px; }
-    .ferrara .title span {
-      color: #ED1D24; }
-  .ferrara .text {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 180%;
-    color: #000000;
-    max-width: 480px;
-    margin-bottom: 77px; }
-    .ferrara .text span {
-      font-weight: 600;
-      color: #ED1D24; }
-  .ferrara .text-ferrara {
-    margin-bottom: 28px;
-    max-width: 464px; }
-  .ferrara .button-one {
-    display: inline-block;
-    background: #ED1D24;
-    -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    border: 2px solid #ED1D24;
-    margin-right: 10px; }
-    .ferrara .button-one .btn {
-      font-family: "Open Sans", sans-serif;
+      left: 40px; }
+    .use .item p {
+      font-family: "Lato", sans-serif;
       font-style: normal;
       font-weight: bold;
-      font-size: 13px;
-      line-height: 18px;
-      letter-spacing: 0.1em;
-      text-align: center;
-      color: #FFFFFF;
-      padding: 17px 62px; }
-    .ferrara .button-one:hover {
-      background: #fff; }
-      .ferrara .button-one:hover .btn {
-        color: #ED1D24; }
-  .ferrara .buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-  .ferrara .button-second {
-    display: inline-block;
-    background: #ED1D24;
-    -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    border: 2px solid #ED1D24; }
-    .ferrara .button-second .btn {
-      font-family: "Open Sans", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 18px;
-      letter-spacing: 0.1em;
-      text-align: center;
-      color: #FFFFFF;
-      padding: 17px 44px; }
-    .ferrara .button-second:hover {
-      background: #fff; }
-      .ferrara .button-second:hover .btn {
-        color: #ED1D24; }
-  .ferrara .ferrara-info {
-    padding-top: 77px; }
-    .ferrara .ferrara-info .item {
-      position: relative;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      z-index: 2; }
-    .ferrara .ferrara-info .image-info {
-      max-width: 426px;
-      max-height: 162px;
-      margin-bottom: 28px;
-      -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); }
-    .ferrara .ferrara-info p {
-      font-family: "Montserrat", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 180%;
+      font-size: 12px;
+      line-height: 151.5%;
       text-align: center;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: #08203E;
+      color: #000;
       margin-bottom: 0; }
-  @media (max-width: 1125px) {
-    .ferrara .button-one .btn {
-      padding: 17px 55px; }
-    .ferrara .button-second .btn {
-      padding: 17px 21px; } }
-  @media (max-width: 991px) {
-    .ferrara {
-      padding-top: 80px;
-      padding-bottom: 40px; }
-      .ferrara .button-one .btn {
-        padding: 17px 62px; }
-      .ferrara .button-second .btn {
-        padding: 17px 44px; }
-      .ferrara .vector {
-        display: none; }
-      .ferrara .image-ferrara {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 40px; }
-      .ferrara .title {
-        text-align: center; }
-      .ferrara .text {
-        text-align: center;
-        max-width: 100%;
-        margin-bottom: 40px; }
-      .ferrara .text-ferrara {
-        margin-bottom: 15px; }
-      .ferrara .buttons {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center; }
-        .ferrara .buttons .button-one {
-          margin-right: 49px; }
-      .ferrara .image-roof {
-        margin: 40px auto; }
-      .ferrara .ferrara-info .item {
-        margin-bottom: 40px; } }
-  @media (max-width: 768px) {
-    .ferrara {
-      padding-top: 40px;
-      padding-bottom: 20px; }
-      .ferrara .text {
-        margin-bottom: 20px; }
-      .ferrara .caption {
-        margin-bottom: 20px;
-        font-size: 25px;
-        line-height: 138.18%; }
-        .ferrara .caption strong {
-          bottom: -18px; }
-        .ferrara .caption:after {
-          left: 0;
-          right: 0;
-          bottom: -9px;
-          margin: auto; }
-      .ferrara .image-roof {
-        margin: 20px auto; }
-      .ferrara .colors, .ferrara .image-ferrara {
-        margin-bottom: 20px; }
-      .ferrara .ferrara-info {
-        padding-top: 20px; }
-        .ferrara .ferrara-info .item {
-          margin-bottom: 20px; } }
-  @media (max-width: 508px) {
-    .ferrara .buttons {
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-      .ferrara .buttons .button-one {
-        margin-right: 7px;
-        margin-left: 7px; }
-      .ferrara .buttons .button-second {
-        margin-right: 7px;
-        margin-left: 7px; } }
-  @media (max-width: 487px) {
-    .ferrara .buttons .button-one {
-      margin-bottom: 20px; }
-      .ferrara .buttons .button-one .btn {
-        padding: 17px 74px; } }
+  .use .image-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .use .image-big {
+    max-width: 460px;
+    max-height: 377px;
+    margin-right: 5px; }
+  .use .image-small {
+    max-width: 149px; }
+  .use .middle {
+    margin: 5px 0; }
+  .use .image-for {
+    max-width: 663px;
+    height: 320px; }
+  .use .image-nav {
+    max-width: 300px;
+    height: 155px; }
+  .use .nav-tabs .nav-link {
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    display: contents; }
+  .use .nav-tabs {
+    border-bottom: none; }
 
 .rialto {
   padding-top: 61px;
@@ -2829,341 +2423,105 @@
     .roof .image {
       height: 200px; } }
 
-.choice {
-  padding: 52px 0 50px 0;
-  overflow: hidden;
-  background: #08203E; }
-  .choice .caption {
+.cooperation {
+  padding: 80px 0;
+  position: relative;
+  background: #282828; }
+  .cooperation .title {
+    font-weight: 700;
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 147.69%;
     text-transform: uppercase;
-    color: #FFFFFF;
+    letter-spacing: -.02em;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 20px;
     margin-bottom: 20px; }
-  .choice .text {
+  .cooperation .form-title {
+    font-weight: 700;
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 21px;
-    line-height: 147.69%;
-    color: #FFFFFF; }
-  .choice form input {
-    padding: 11px 7px;
-    width: 423px;
-    display: block;
-    border: none;
-    border-bottom: 1px solid #FFFFFF;
+    letter-spacing: -.02em;
+    margin-right: 15px;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .cooperation .text {
     font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 300;
     font-size: 18px;
-    line-height: 147.69%;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: transparent; }
-  .choice form label {
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: -.02em;
+    color: #fff;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .cooperation input {
+    display: inline-block;
+    max-width: 200px;
+    min-height: 42px;
+    padding: 9px 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -.02em;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 147.69%;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin-bottom: 7px; }
-  .choice form input[type="text"] {
-    margin-bottom: 24px; }
-  .choice form input[type="tel"] {
-    margin-bottom: 42px; }
-  .choice form input:focus {
-    outline: none; }
-  .choice form input::-webkit-input-placeholder {
-    color: #FFFFFF; }
-  .choice form input::-ms-input-placeholder {
-    color: #FFFFFF; }
-  .choice form input::-ms-input-placeholder {
-    color: #FFFFFF; }
-  .choice form input:-ms-input-placeholder {
-    color: #FFFFFF; }
-  .choice form input::placeholder {
-    color: #FFFFFF; }
-  .choice form button {
-    background: #ED1D24;
-    -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    border: 2px solid #ED1D24; }
-    .choice form button .btn {
-      font-family: "Open Sans", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 18px;
-      letter-spacing: 0.1em;
-      text-align: center;
-      color: #FFFFFF;
-      padding: 17px 36px; }
-    .choice form button:hover {
-      background: #fff; }
-      .choice form button:hover .btn {
-        color: #ED1D24; }
-  @media (max-width: 1070px) {
-    .choice form input {
-      width: 380px; } }
-  @media (max-width: 991px) {
-    .choice .caption, .choice .text {
-      text-align: center; }
-    .choice .caption {
-      font-size: 25px;
-      line-height: 138.18%; }
-    .choice .text {
-      margin-bottom: 20px; }
-    .choice form {
-      width: 350px;
-      margin: auto; }
-      .choice form input {
-        width: 400px; }
-      .choice form button {
-        width: 247px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block; } }
-  @media (max-width: 768px) {
-    .choice {
-      padding: 40px 0 40px 0; }
-      .choice .caption {
-        text-align: center;
-        font-size: 22px;
-        line-height: 138.18%;
-        margin-bottom: 20px; }
-      .choice .text {
-        text-align: center; } }
-  @media (max-width: 600px) {
-    .choice form input {
-      width: 100%; } }
-  @media (max-width: 400px) {
-    .choice form {
-      width: 280px; } }
-
-.reviews {
-  padding: 83px 0 32px 0;
-  background: #08203E;
-  overflow: hidden; }
-  .reviews strong {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 288px;
-    line-height: 147.69%;
-    text-align: right;
-    color: rgba(237, 29, 36, 0.2);
-    position: absolute;
-    top: -358px;
-    left: -3px; }
-  .reviews .right-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    position: relative; }
-    .reviews .right-content .caption {
-      font-family: "Montserrat", sans-serif;
-      font-style: normal;
-      font-weight: 900;
-      font-size: 30px;
-      line-height: 147.69%;
-      text-align: right;
-      text-transform: uppercase;
-      margin-top: 77px;
-      color: #FFFFFF; }
-    .reviews .right-content .budmat {
-      font-family: "Montserrat", sans-serif;
-      font-style: normal;
-      font-weight: 900;
-      font-size: 54px;
-      line-height: 102.69%;
-      color: rgba(237, 29, 36, 0.9);
-      margin: 0;
-      text-align: right; }
-      .reviews .right-content .budmat span {
-        color: rgba(240, 240, 240, 0.9);
-        margin-left: -15px; }
-  .reviews .reviews-card {
-    padding: 0 23px 0 23px;
-    background: #FFFFFF;
-    max-width: 315px;
-    height: 100%;
-    position: relative;
-    margin-right: 26px;
-    margin-left: 26px;
-    margin-bottom: 29px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    min-height: 298px; }
-    .reviews .reviews-card .reviews-title {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row; }
-    .reviews .reviews-card .image {
-      max-width: 54px;
-      max-height: 54px;
-      margin-right: 16px; }
-    .reviews .reviews-card .reviews-text {
-      font-family: "Montserrat", sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 13px;
-      line-height: 18px;
-      color: #242424;
-      max-width: 276px;
-      margin: 0; }
-    .reviews .reviews-card .title {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-    .reviews .reviews-card .name {
-      font-family: "Montserrat", sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 137.9%;
-      text-align: left;
-      color: #242424;
-      margin-bottom: 0; }
-    .reviews .reviews-card .town {
-      font-family: "Open Sans", sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 19px;
-      color: #242424;
-      margin-bottom: 0; }
-  .reviews .slick-prev:before, .reviews .slick-next:before {
-    font-size: 1px; }
-  .reviews .slick-prev.slick-arrow {
-    right: -75px;
-    top: 178px; }
-  .reviews .slick-next {
-    right: -120px;
-    top: 178px;
-    border-left: 1px solid #D8D8D8; }
-  .reviews .slick-prev, .reviews .slick-next {
-    font-size: 16px;
-    line-height: 0;
-    position: absolute;
-    display: block;
-    width: 46px;
-    height: 46px;
-    padding: 0;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    cursor: pointer;
-    color: #353535;
-    border-right: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent;
+    background: transparent;
     outline: none;
-    background: #fff;
-    z-index: 1; }
-  .reviews .slick-prev:active, .reviews .slick-next:active {
-    color: #ffffff;
-    border: 1px solid #fff;
-    background: transparent; }
-  @media (max-width: 1060px) {
-    .reviews .reviews-card {
-      margin: 35px 15px 35px 15px; } }
-  @media (max-width: 991px) {
-    .reviews {
-      padding: 80px 0 40px 0; }
-      .reviews strong {
-        display: none; }
-      .reviews .vector {
-        display: none; }
-      .reviews .row {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse; }
-      .reviews .right-content {
-        display: block;
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto; }
-        .reviews .right-content .budmat {
-          font-size: 50px;
-          text-align: center;
-          margin-bottom: 0;
-          margin-top: 0; }
-          .reviews .right-content .budmat span {
-            margin-left: -15px; }
-        .reviews .right-content .caption {
-          text-align: center;
-          margin-bottom: 40px;
-          margin-top: 0; }
-      .reviews .reviews-card {
-        min-height: 330px; } }
-  @media (max-width: 800px) {
-    .reviews .reviews-card {
-      min-height: 400px; } }
-  @media (max-width: 768px) {
-    .reviews {
-      padding: 40px 0 20px 0; }
-      .reviews .right-content .caption {
-        margin-bottom: 20px;
-        font-size: 25px;
-        line-height: 138.18%; }
-      .reviews .right-content .budmat {
-        font-size: 35px; }
-        .reviews .right-content .budmat span {
-          margin-left: -10px; }
-      .reviews .reviews-card {
-        margin: 35px 25px 35px 25px; } }
-  @media (max-width: 576px) {
-    .reviews .right-content .caption {
-      font-size: 20px; }
-    .reviews .right-content .budmat {
-      font-size: 30px; } }
-  @media (max-width: 530px) {
-    .reviews .reviews-card {
-      margin: 35px 20px 35px 20px; } }
-  @media (max-width: 460px) {
-    .reviews .reviews-card {
-      margin: 35px 58px 35px 58px; } }
-  @media (max-width: 430px) {
-    .reviews .reviews-card {
-      margin: 35px 42px 35px 42px; } }
-  @media (max-width: 380px) {
-    .reviews .reviews-card {
-      margin: 35px 20px 35px 20px; } }
+    color: #FFFFFF;
+    margin-right: 25px; }
+  .cooperation input:focus {
+    outline: none; }
+  .cooperation input::-webkit-input-placeholder {
+    color: #FFFFFF; }
+  .cooperation input::-ms-input-placeholder {
+    color: #FFFFFF; }
+  .cooperation input::-ms-input-placeholder {
+    color: #FFFFFF; }
+  .cooperation input:-ms-input-placeholder {
+    color: #FFFFFF; }
+  .cooperation input::placeholder {
+    color: #FFFFFF; }
+
+button {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 15px;
+  line-height: 1.5;
+  border: 1px solid #c4956a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #c4956a;
+  color: #FFFFFF;
+  border-radius: 0; }
+  button:hover {
+    background-color: transparent;
+    color: #c4956a; }
+
+.gallery {
+  padding: 80px 0;
+  background: #fff; }
+  .gallery .col-lg-4 {
+    padding: 5px; }
+  .gallery .caption {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: -.02em;
+    color: #000;
+    text-align: center; }
 
 .footer {
   background: #F2F2F2;
@@ -3421,17 +2779,41 @@
   font-weight: normal;
   font-style: normal;
   font-display: block; }
+.icon-mortgage-1:before {
+  content: "\e908";
+  color: #c4956a; }
+
+.icon-area:before {
+  content: "\e904";
+  color: #c4956a; }
+
+.icon-blueprint:before {
+  content: "\e905";
+  color: #c4956a; }
+
+.icon-check-in:before {
+  content: "\e906";
+  color: #c4956a; }
+
+.icon-reliability:before {
+  content: "\e907";
+  color: #c4956a; }
+
 .icon-door:before {
-  content: "\e900"; }
+  content: "\e900";
+  color: #c4956a; }
 
 .icon-feedback:before {
-  content: "\e901"; }
+  content: "\e901";
+  color: #c4956a; }
 
 .icon-mortgage:before {
-  content: "\e902"; }
+  content: "\e902";
+  color: #c4956a; }
 
 .icon-team:before {
-  content: "\e903"; }
+  content: "\e903";
+  color: #c4956a; }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */

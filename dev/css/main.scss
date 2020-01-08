@@ -4,9 +4,9 @@ $caption_text: Cera Pro, sans-serif;
 @import "header";
 @import "banner";
 @import "agent";
-@import "venecja";
-@import "murano";
-@import "ferrara";
+@import "models";
+@import "specialist";
+@import "use";
 @import "rialto";
 @import "flamingo";
 @import "proaqua";
@@ -14,8 +14,8 @@ $caption_text: Cera Pro, sans-serif;
 @import "certificates";
 @import "water";
 @import "roof";
-@import "choice";
-@import "reviews";
+@import "cooperation";
+@import "gallery";
 @import "footer";
 
 
@@ -77,18 +77,42 @@ $caption_text: Cera Pro, sans-serif;
   font-display: block;
 }
 
+.icon-mortgage-1:before {
+  content: "\e908";
+  color: #c4956a;
+}
 
+.icon-area:before {
+  content: "\e904";
+  color: #c4956a;
+}
+.icon-blueprint:before {
+  content: "\e905";
+  color: #c4956a;
+}
+.icon-check-in:before {
+  content: "\e906";
+  color: #c4956a;
+}
+.icon-reliability:before {
+  content: "\e907";
+  color: #c4956a;
+}
 .icon-door:before {
   content: "\e900";
+  color: #c4956a;
 }
 .icon-feedback:before {
   content: "\e901";
+  color: #c4956a;
 }
 .icon-mortgage:before {
   content: "\e902";
+  color: #c4956a;
 }
 .icon-team:before {
   content: "\e903";
+  color: #c4956a;
 }
 
 [class^="icon-"], [class*=" icon-"] {
