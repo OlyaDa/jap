@@ -1,0 +1,94 @@
+//////////////////////////AGENT BEGIN////////////////////////
+$font_text: 'Montserrat', sans-serif;
+
+.agent {
+  background: #ffffff;
+  padding: 80px 0;
+  position: relative;
+
+  .caption {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-family: $font_text;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: -.02em;
+    color: #000;
+    text-align: center;
+  }
+
+  .fa-play-circle {
+    color: #fff;
+    font-size: 68px;
+    position: absolute;
+    top: calc(50% - 34px);
+    left: calc(50% - 34px);
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image-video {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .image-logo {
+    max-width: 140px;
+    max-height: 60px;
+    margin-right: 20px;
+  }
+
+  .image-cesky {
+    max-width: 74px;
+    max-height: 91px;
+  }
+
+  p {
+    font-family: $font_text;
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: -.02em;
+    color: rgba(0,0,0,.7);
+    margin-top: 20px;
+    max-width: 528px;
+  }
+
+  .catalog-card {
+    background: #FFFFFF;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    min-height: 161px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    span {
+      font-size: 45px;
+      margin-bottom: 13px;
+      margin-top: 25px;
+    }
+
+    p {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 151.5%;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #000;
+      max-width: 252px;
+    }
+  }
+}
+
+//////////////////////////AGENT END////////////////////////

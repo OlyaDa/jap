@@ -1,0 +1,143 @@
+////////////////////////BANNER BEGIN////////////////////////
+$font_text: 'Montserrat', sans-serif;
+
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url("../../public/images/banner.jpg") center no-repeat;
+  background-size: cover;
+  padding-top: 67px;
+  //display: flex;
+
+
+  .banner-inner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .captions {
+    margin-bottom: 20px;
+  }
+
+  .caption {
+    line-height: 1.16667;
+    font-weight: 700;
+    font-family: $font_text;
+    text-transform: uppercase;
+    letter-spacing: -.02em;
+    font-size: 50px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .sub-caption {
+    line-height: 1.16667;
+    font-weight: 700;
+    font-family: $font_text;
+    text-transform: uppercase;
+    letter-spacing: -.02em;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .circles {
+    justify-content: space-between;
+    align-items: baseline;
+    display: contents;
+    margin: 0 auto 20px;
+  }
+
+  .circles-holder {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &:hover {
+      text-decoration: none;
+    }
+
+    .circle {
+      height: 130px;
+      width: 130px;
+      background: #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 35px;
+      margin-left: 35px;
+
+      .icon-roof {
+        font-size: 75px;
+      }
+
+      .icon-water, .icon-box1, .icon-truck, .icon-warranty {
+        font-size: 70px;
+      }
+    }
+
+    .text {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 151.5%;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-top: 17px;
+      max-width: 190px;
+      margin-bottom: 0;
+    }
+  }
+
+  .order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    p {
+      margin-bottom: 0;
+      font-size: 15px;
+      font-weight: 700;
+      font-family: $font_text;
+      text-transform: uppercase;
+      letter-spacing: -.02em;
+      color: #fff;
+      margin-right: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 30px;
+      font-size: 15px;
+      line-height: 1.5;
+      border: 1px solid #c4956a;
+      font-family: $font_text;
+      font-weight: 700;
+      letter-spacing: -.02em;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: transparent;
+      color: #FFFFFF;
+      border-radius: 0;
+      &:hover {
+        background-color: #c4956a;
+      }
+    }
+
+  }
+
+}
