@@ -31,27 +31,6 @@ $(document).ready(function() {
     });
 });
 
-//slider for "office"
-
-$('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
-    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-    fade: true,
-    asNavFor: '.slider-nav'
-});
-
-$('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: false,
-    centerMode: false,
-    focusOnSelect: true,
-    arrows: false,
-});
-
 //slider for "certificates"
 
 $('.certificates-slider').slick({
@@ -151,7 +130,7 @@ $(document).ready(function() {
     });
 });
 
-///////////
+//gallery
 $(document).ready(function() {
     $('.popup-gallery').magnificPopup({
         delegate: 'a',
