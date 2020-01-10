@@ -89,6 +89,59 @@ $font_text: 'Montserrat', sans-serif;
       max-width: 252px;
     }
   }
+
+  ////media
+
+  @media (max-width: 991px) {
+    .text {
+      margin-bottom: 40px;
+      max-width: 100%;
+    }
+
+    .catalog-card {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 20px 0;
+
+    .caption {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    .image-video {
+      margin-bottom: 20px;
+    }
+
+    .text {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .catalog-card span {
+      font-size: 40px;
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+
+    .catalog-card {
+      min-height: 130px;
+    }
+
+    .catalog-card p {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .caption {
+      font-size: 18px;
+    }
+  }
+
 }
 
 //////////////////////////AGENT END////////////////////////

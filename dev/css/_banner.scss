@@ -3,22 +3,16 @@ $font_text: 'Montserrat', sans-serif;
 
 .banner {
   position: relative;
-  min-height: 100vh;
+  min-height: calc( 100vh - 67px );
   background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%), url("../../public/images/banner.jpg") center no-repeat;
   background-size: cover;
   padding-top: 67px;
-  //display: flex;
-
 
   .banner-inner {
-    min-height: 100vh;
+    min-height: calc( 100vh - 67px );
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-  }
-
-  .captions {
-    margin-bottom: 20px;
   }
 
   .caption {
@@ -30,6 +24,8 @@ $font_text: 'Montserrat', sans-serif;
     font-size: 50px;
     text-align: center;
     color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   .sub-caption {
@@ -41,6 +37,7 @@ $font_text: 'Montserrat', sans-serif;
     font-size: 40px;
     text-align: center;
     color: #FFFFFF;
+    margin-bottom: 20px;
   }
 
   .circles {
@@ -55,6 +52,7 @@ $font_text: 'Montserrat', sans-serif;
     align-items: baseline;
     justify-content: space-around;
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .item {
@@ -81,7 +79,7 @@ $font_text: 'Montserrat', sans-serif;
         font-size: 75px;
       }
 
-      .icon-water, .icon-box1, .icon-truck, .icon-warranty {
+      .icon-door, .icon-truck, .icon-contract {
         font-size: 70px;
       }
     }
@@ -137,7 +135,61 @@ $font_text: 'Montserrat', sans-serif;
         background-color: transparent;
       }
     }
+  }
 
+  ////media
+
+  @media (max-width: 991px) {
+    .caption {
+      font-size: 40px;
+    }
+
+    .sub-caption {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: 630px) {
+    .item .circle {
+      height: 75px;
+      width: 75px;
+    }
+
+    .item .circle .icon-door, .item .circle .icon-truck, .item .circle .icon-contract {
+      font-size: 40px;
+    }
+
+    .item .text {
+      max-width: 160px;
+      line-height: 140.5%;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .caption {
+      font-size: 25px;
+    }
+
+    .sub-caption {
+      font-size: 18px;
+    }
+
+    .item .circle {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .item .text {
+      margin-top: 8px;
+    }
+
+    .order p {
+      font-size: 15px;
+    }
+
+    .order .btn {
+      font-size: 12px;
+    }
   }
 
 }

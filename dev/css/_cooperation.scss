@@ -11,7 +11,6 @@ $font_text: 'Montserrat', sans-serif;
     font-family: $font_text;
     text-transform: uppercase;
     letter-spacing: -.02em;
-    margin-right: 20px;
     color: #fff;
     font-size: 20px;
     margin-bottom: 20px;
@@ -21,7 +20,6 @@ $font_text: 'Montserrat', sans-serif;
     font-weight: 700;
     font-family: $font_text;
     letter-spacing: -.02em;
-    margin-right: 15px;
     color: #fff;
     font-size: 20px;
     margin-bottom: 20px;
@@ -67,7 +65,6 @@ $font_text: 'Montserrat', sans-serif;
   input::-ms-input-placeholder { color: #FFFFFF; }
   input::-ms-input-placeholder { color: #FFFFFF; }
   input::placeholder { color: #FFFFFF; }
-}
 
 button {
   display: inline-block;
@@ -87,6 +84,73 @@ button {
     background-color: transparent;
     color: #c4956a;
   }
+}
+
+////media
+
+@media (max-width: 1208px) {
+  input {
+    min-width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .title {
+    text-align: center;
+  }
+
+  .text {
+    justify-content: center;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .form-title {
+    text-align: center;
+  }
+
+  input {
+    max-width: 100%;
+    min-width: 65%;
+    margin-right: 0;
+  }
+
+  form {
+    text-align: center;
+
+    button {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+
+    .title {
+      margin-bottom: 20px;
+    }
+
+    .text {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .title, .form-title {
+      font-size: 18px;
+    }
+
+    input {
+      min-width: 95%;
+    }
+  }
+
 }
 
 

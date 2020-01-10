@@ -84,12 +84,6 @@ $font_text: 'Montserrat', sans-serif;
     height: 155px;
   }
 
-  //.nav-tabs .nav-link {
-  //  border: none;
-  //  border-top-left-radius: 0;
-  //  border-top-right-radius: 0;
-  //}
-
   .nav-tabs .nav-link {
     color: transparent;
     background-color: transparent;
@@ -99,6 +93,72 @@ $font_text: 'Montserrat', sans-serif;
 
   .nav-tabs {
     border-bottom: none;
+  }
+
+  ////media
+
+  @media (max-width: 1200px) {
+    .item {
+      justify-content: start;
+      span {
+        font-size: 45px;
+        position: relative;
+        margin-right: 20px;
+        left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .item {
+      justify-content: center;
+      span {
+        font-size: 40px;
+        position: absolute;
+        left: 17%;
+      }
+    }
+
+    .image-holder {
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 0 40px 0;
+
+    .caption {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .item {
+      padding: 20px;
+      span {
+        left: 4%;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .caption {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .item {
+      flex-direction: column;
+      span {
+        position: relative;
+        margin-right: 0;
+        left: 0;
+        margin-bottom: 20px;
+      }
+    }
   }
 }
 

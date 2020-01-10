@@ -43,50 +43,34 @@ $('.slider-nav').slick({
     arrows: false,
 });
 
-//slider for "soffits"
+//slider for "certificates"
 
-$('.soffits-slider').slick({
-    slidesToShow: 4,
+$('.certificates-slider').slick({
+    slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
     arrows: true,
-    dots: false,
+    dots: true,
     autoplay: false,
-    speed: 1000,
     centerMode: true,
     centerPadding: '0px',
     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
     responsive: [
         {
-            breakpoint: 993,
+            breakpoint: 992,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
+                arrows: true,
+                centerMode: false,
             }
         },
-
         {
             breakpoint: 769,
             settings: {
-                slidesToShow: 3,
-                arrows: false,
-            }
-        },
-
-        {
-            breakpoint: 701,
-            settings: {
-                slidesToShow: 2,
-                arrows: false,
-            }
-        },
-
-        {
-            breakpoint: 400,
-            settings: {
                 slidesToShow: 1,
                 arrows: false,
-                autoplay: false,
+                centerMode: false,
             }
         },
     ]
@@ -95,34 +79,27 @@ $('.soffits-slider').slick({
 //slider for "reviews"
 
 $('.reviews-slider').slick({
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
     arrows: true,
     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-    dots: false,
+    dots: true,
     autoplay: false,
     responsive: [
         {
             breakpoint: 992,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
+                arrows: true,
             }
         },
-
         {
             breakpoint: 769,
             settings: {
-                slidesToShow: 2,
-            }
-        },
-
-        {
-            breakpoint: 461,
-            settings: {
                 slidesToShow: 1,
-                autoplay: false,
+                arrows: false,
             }
         },
     ]
@@ -138,6 +115,14 @@ $('.models-slider').slick({
     dots: true,
     prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
     nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
+    responsive: [
+        {
+            breakpoint: 577,
+            settings: {
+                arrows: false,
+            }
+        },
+    ]
 });
 
 //scroll
@@ -153,7 +138,6 @@ $(document).ready(function() {
         mainClass: 'mfp-fade',
         removalDelay: 160,
         preloader: false,
-
         fixedContentPos: false
     });
 });

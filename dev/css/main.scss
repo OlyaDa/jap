@@ -10,7 +10,7 @@ $caption_text: Cera Pro, sans-serif;
 @import "rialto";
 @import "flamingo";
 @import "proaqua";
-@import "office";
+@import "reviews";
 @import "certificates";
 @import "water";
 @import "roof";
@@ -65,56 +65,6 @@ $caption_text: Cera Pro, sans-serif;
   font-display: block;
 }
 
-@font-face {
-  font-family: 'icomoon';
-  src:  url('../../public/fonts/icomoon2.eot?31g4lx');
-  src:  url('../../public/fonts/icomoon2.eot?31g4lx#iefix') format('embedded-opentype'),
-  url('../../public/fonts/icomoon2.ttf?31g4lx') format('truetype'),
-  url('../../public/fonts/icomoon2.woff?31g4lx') format('woff'),
-  url('../../public/fonts/icomoon2.svg?31g4lx#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-.icon-mortgage-1:before {
-  content: "\e908";
-  color: #c4956a;
-}
-
-.icon-area:before {
-  content: "\e904";
-  color: #c4956a;
-}
-.icon-blueprint:before {
-  content: "\e905";
-  color: #c4956a;
-}
-.icon-check-in:before {
-  content: "\e906";
-  color: #c4956a;
-}
-.icon-reliability:before {
-  content: "\e907";
-  color: #c4956a;
-}
-.icon-door:before {
-  content: "\e900";
-  color: #c4956a;
-}
-.icon-feedback:before {
-  content: "\e901";
-  color: #c4956a;
-}
-.icon-mortgage:before {
-  content: "\e902";
-  color: #c4956a;
-}
-.icon-team:before {
-  content: "\e903";
-  color: #c4956a;
-}
-
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -130,59 +80,59 @@ $caption_text: Cera Pro, sans-serif;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-box1:before {
+.icon-blueprint:before {
   content: "\e900";
   color: #c4956a;
 }
-.icon-box2:before {
+.icon-check-in:before {
   content: "\e901";
   color: #c4956a;
 }
-.icon-call:before {
+.icon-contract:before {
   content: "\e902";
+  color: #c4956a;
 }
-.icon-call2:before {
+.icon-door:before {
   content: "\e903";
-}
-.icon-clock2:before {
-  content: "\e904";
   color: #c4956a;
 }
 .icon-facebook:before {
-  content: "\e905";
+  content: "\e904";
+  color: #c4956a;
 }
-.icon-house:before {
+.icon-feedback:before {
+  content: "\e905";
+  color: #c4956a;
+}
+.icon-inst:before {
   content: "\e906";
   color: #c4956a;
 }
-.icon-instagram:before {
+.icon-mortgage-1:before {
   content: "\e907";
+  color: #c4956a;
 }
-.icon-map:before {
+.icon-mortgage:before {
   content: "\e908";
+  color: #c4956a;
 }
-.icon-roof:before {
+.icon-reliability:before {
   content: "\e909";
   color: #c4956a;
 }
-.icon-truck:before {
+.icon-team:before {
   content: "\e90a";
   color: #c4956a;
 }
-.icon-wall-clock:before {
+.icon-truck:before {
   content: "\e90b";
-}
-.icon-warranty:before {
-  content: "\e90c";
-  color: #c4956a;
-}
-.icon-water:before {
-  content: "\e90d";
   color: #c4956a;
 }
 .icon-youtube:before {
-  content: "\e90e";
+  content: "\e90c";
+  color: #c4956a !important;
 }
+
 
 * {
   box-sizing: border-box;
@@ -233,118 +183,123 @@ img {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  padding: 45px 0 45px 0;
+  padding: 40px 0 40px 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+  .logo {
+    max-width: 100px;
+    max-height: 50px;
+    margin: 0 auto 20px auto;
+  }
 
   form {
     display: inline-block;
     background: #fff;
     padding: 0 40px 0 40px;
-
     text-align: center;
 
     .form-title {
-      font-family: $font_text;
+      font-family: "Lato", sans-serif;
       font-style: normal;
-      font-weight: 900;
-      font-size: 16px;
-      line-height: 24px;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 151.5%;
       text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 37px;
-      color: #08203E;
+      letter-spacing: 0.1em;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    .form-text {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 151.5%;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #000;
+      margin-top: 20px;
     }
 
     input {
-      padding: 11px 7px;
-      width: 423px;
       display: block;
+      width: 100%;
+      min-height: 42px;
+      padding: 9px 0;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -.02em;
+      border-radius: 0;
       border: none;
       border-bottom: 1px solid #08203E;
       font-family: $font_text;
       font-style: normal;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 147.69%;
-      text-transform: uppercase;
-      color: #08203E;
-    }
-
-    label {
-      font-family: $font_text;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 12px;
-      line-height: 147.69%;
-      text-transform: uppercase;
-      color: #08203E;
-      margin-bottom: 7px;
-      text-align: initial;
-      display: block;
+      background: transparent;
+      outline: none;
+      color: #000;
     }
 
     input[type="text"] {
-      margin-bottom:24px;
+      margin-bottom:20px;
     }
 
     input[type="tel"] {
-      margin-bottom: 38px;
+      margin-bottom: 20px;
     }
+
     input:focus {
       outline: none;
     }
 
-    textarea {
-      width: 367px;
-      height: 90px;
-      display: block;
-      font-family: "Comfortaa", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 21px;
-      text-transform: uppercase;
-      margin-left: auto;
-      margin-right: auto;
-      color: #2D2D2D;
-      border: 1px solid #898989;
-      border-radius: 10px;
-      padding: 16px 14px 32px 26px;
-      background: transparent;
-      margin-top: 3px;
-    }
+    input::-webkit-input-placeholder { color: #000; }
+    input::-ms-input-placeholder { color: #000; }
+    input::-ms-input-placeholder { color: #000; }
+    input::placeholder { color: #000; }
 
-    button {
-      margin-left: auto;
-      margin-right: auto;
-      background: #ED1D24;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-      border-radius: 4px;
-      border: 2px solid #ED1D24;
-      .btn {
-        font-family: "Open Sans", sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 18px;
-        letter-spacing: 0.1em;
-        text-align: center;
-        color: #FFFFFF;
-        padding: 17px 36px;
-      }
-      &:hover {
-        background: #fff;
-        .btn {
-          color: #ED1D24;
+  button {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 12px;
+    line-height: 1.5;
+    border: 1px solid #c4956a;
+    font-family: $font_text;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #c4956a;
+    color: #FFFFFF;
+    border-radius: 0;
+    &:hover {
+      background-color: transparent;
+      color: #c4956a;
+    }
+  }
+
+    .social {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+
+      a {
+        &:hover {
+          text-decoration: none;
         }
       }
+
+      span {
+        font-size: 30px;
+      }
     }
+
   }
 
   ///media
 
   @media (max-width: 580px) {
-    padding: 45px 40px 45px 40px;
+    padding: 20px 10px;
     form {
       padding: 20px 0 20px 0;
       display: block;

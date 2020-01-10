@@ -1,10 +1,14 @@
-//////////////////////////MODELS BEGIN////////////////////////
+//////////////////////////OFFICE BEGIN////////////////////////
 $font_text: 'Montserrat', sans-serif;
 
-.models {
-  padding: 80px 0;
+.reviews {
+  padding: 80px 0 80px 0;
   position: relative;
   background-color: #f5f5f5;
+
+  .reviews-slider {
+    outline: none;
+  }
 
   .caption {
     margin-top: 0;
@@ -18,79 +22,60 @@ $font_text: 'Montserrat', sans-serif;
     text-align: center;
   }
 
-  .title {
+  .reviews-title {
     display: flex;
     align-items: center;
-    //justify-content: center;
-    margin-bottom: 20px;
 
-    p {
-      font-weight: 700;
-      font-family: $font_text;
-      text-transform: uppercase;
-      letter-spacing: -.02em;
+    .image {
+      max-width: 84px;
+      max-height: 84px;
       margin-right: 20px;
-      color: #c4956a;
-      font-size: 20px;
-      margin-bottom: 0;
+      margin-bottom: 20px;
     }
 
-    .image-logo {
-      max-width: 140px;
-      max-height: 60px;
+    .title {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 151.5%;
+      text-align: center;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #000;
+      margin: 0 0 11px;
+    }
+
+    .town {
+      font-family: $font_text;
+      font-size: 15px;
+      line-height: 1.6;
+      font-weight: 400;
+      letter-spacing: -.02em;
+      color: #c4956a;
+      margin-bottom: 20px;
     }
   }
-
-  p {
+  .reviews-text {
     font-family: $font_text;
     font-size: 13px;
     line-height: 1.6;
     font-weight: 400;
     letter-spacing: -.02em;
-    color: rgba(0,0,0,.7);
+    color: rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
     max-width: 410px;
   }
 
-  .button {
-    margin-top: 60px;
-  }
-
-  .btn {
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 15px;
-    line-height: 1.5;
-    border: 1px solid #c4956a;
-    font-family: $font_text;
-    font-weight: 700;
-    letter-spacing: -.02em;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #c4956a;
-    color: #FFFFFF;
-    border-radius: 0;
-    &:hover {
-      background-color: transparent;
-      color: #c4956a;
-    }
-  }
-
-  .gallery-image {
-    max-width: 535px;
-    max-height: 429px;
-  }
-
-  .models-slider {
+  .reviews-body {
+    padding-left: 15px;
+    padding-right: 15px;
     outline: none;
-  }
-
-  .row {
-    margin-bottom: 80px;
-  }
-
-  .last {
-    margin-bottom: 0;
   }
 
   ///slick-prev slick-next
@@ -100,7 +85,7 @@ $font_text: 'Montserrat', sans-serif;
   }
 
   .slick-prev.slick-arrow {
-    left: 0;
+    right: 60px;
   }
 
   .slick-next {
@@ -108,7 +93,7 @@ $font_text: 'Montserrat', sans-serif;
   }
 
   .slick-prev, .slick-next {
-    top: 50%;
+    top: 108%;
     font-size: 16px;
     line-height: 0;
     position: absolute;
@@ -136,12 +121,12 @@ $font_text: 'Montserrat', sans-serif;
 
   .slick-dots {
     position: absolute;
-    bottom: -40px;
+    bottom: -25px;
     display: block;
     width: 100%;
     list-style: none;
     text-align: center;
-    right: -3.5%;
+    right: 0;
   }
 
 
@@ -177,54 +162,25 @@ $font_text: 'Montserrat', sans-serif;
   ////media
 
   @media (max-width: 991px) {
-    .title {
-      justify-content: center;
-    }
-
-    p {
+    .reviews-body {
       text-align: center;
-      max-width: 100%;
-    }
 
-    .button {
-      text-align: center;
-    }
+      .reviews-text {
+        max-width: 100%;
+      }
 
-    .slick-dots {
-      right: 0;
+      .reviews-title {
+        justify-content: center;
+      }
     }
-
-    .models-slider {
-      width: 66%;
-      margin: 0 auto;
-    }
-
-    .button {
-      margin-top: 20px;
-      margin-bottom: 25px;
-    }
-
   }
 
   @media (max-width: 768px) {
-    padding: 40px 0 80px 0;
-
-    .models-slider {
-      width: 100%;
-      margin: 0 auto;
-    }
+    padding: 40px 0 50px 0;
 
     .caption {
       margin-bottom: 20px;
       font-size: 20px;
-    }
-
-    .title p {
-      font-size: 18px;
-    }
-
-    p {
-      margin-top: 0;
     }
   }
 
@@ -232,20 +188,7 @@ $font_text: 'Montserrat', sans-serif;
     .caption {
       font-size: 18px;
     }
-
-    .title .image-logo {
-      max-width: 100px;
-      max-height: 50px;
-    }
   }
-
-  @media (max-width: 343px) {
-    .title p {
-      text-align: left;
-    }
-  }
-
-
 }
 
-//////////////////////////MODELS END////////////////////////
+//////////////////////////OFFICE END////////////////////////
