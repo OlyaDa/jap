@@ -15,10 +15,19 @@ $(document).ready(function() {
 
 $(function(){
     $('.toggle-menu').on('click',function(){
-        $('.logo').toggleClass('change-img');
         $('.main-nav').toggleClass('open');
         $('.header').toggleClass('bg');
         $( ".toggle-menu" ).toggleClass( "menu-on");
+    });
+});
+
+$(document).ready(function() {
+    $(document).ready(function() {
+        $('.nav-link-new').click(function () {
+            $('.main-nav').removeClass('open');
+            $('.toggle-menu').removeClass('menu-on');
+        });
+
     });
 });
 
