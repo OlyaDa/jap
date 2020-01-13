@@ -160,23 +160,14 @@ $font_text: 'Montserrat', sans-serif;
     .logo {
       max-width: 100px;
       max-height: 50px;
-      margin-right: 20px;
+      margin-right: 0;
     }
 
     .logo-info {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
 
-      .text {
-        margin-bottom: 0;
-        font-family: $font_text;
-        font-size: 14px;
-        line-height: 1.6;
-        font-weight: 400;
-        letter-spacing: -.02em;
-        color: rgba(0, 0, 0, 0.7);
-      }
     }
   }
 

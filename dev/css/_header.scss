@@ -24,9 +24,9 @@ $font_text: 'Montserrat', sans-serif;
     display: flex;
   }
 
-  .menu li {
-    margin-left: 65px;
-  }
+  //.menu li {
+  //  margin-left: 65px;
+  //}
 
   .menu a {
     font-family: $font_text;
@@ -37,7 +37,7 @@ $font_text: 'Montserrat', sans-serif;
     font-style: normal;
     font-size: 15px;
     color: #000000;
-
+    margin-left: 65px;
   }
 
   .menu a:hover {
@@ -48,6 +48,23 @@ $font_text: 'Montserrat', sans-serif;
   .top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .phone {
+    font-family: $font_text;
+    font-style: normal;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: -.02em;
+    color: rgba(0,0,0,.7);
+    font-size: 15px;
+    margin-left: 48px;
+  }
+
+  .phone:hover {
+    color: #c4956a;
+    text-decoration: none;
   }
 
   .logo-address {
@@ -63,13 +80,10 @@ $font_text: 'Montserrat', sans-serif;
     letter-spacing: -.02em;
     color: rgba(0,0,0,.7);
     margin: 0 0 0 48px;
+    display: inline-block;
   }
 
   .logo-mobile {
-    display: none;
-  }
-
-  .phone {
     display: none;
   }
 
@@ -89,7 +103,7 @@ $font_text: 'Montserrat', sans-serif;
       height: 2px;
       top: 50%;
       right: 0;
-      margin-top: 9px;
+      margin-top: 0;
       opacity: 1;
       &:before {
         position: absolute;
@@ -145,10 +159,10 @@ $font_text: 'Montserrat', sans-serif;
 
   ///media
 
-  @media (max-width: 1005px) {
-    .phone {
-      display: block;
-    }
+  @media (max-width: 1146px) {
+    //.phone {
+    //  display: block;
+    //}
 
     .header__inner {
       display: flex;
@@ -193,6 +207,13 @@ $font_text: 'Montserrat', sans-serif;
     }
   }
 
+  @media (max-width: 625px) {
+    .address p {
+      display: flex;
+    }
+
+  }
+
   @media (max-width: 460px) {
     .logo {
       max-width: 80px;
@@ -201,6 +222,11 @@ $font_text: 'Montserrat', sans-serif;
     .address p {
       font-size: 12px;
       margin: 0 0 0 10px;
+    }
+
+    .phone {
+      margin-left: 10px;
+      font-size: 13px;
     }
   }
 

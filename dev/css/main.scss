@@ -7,13 +7,8 @@ $caption_text: Cera Pro, sans-serif;
 @import "models";
 @import "specialist";
 @import "use";
-@import "rialto";
-@import "flamingo";
-@import "proaqua";
 @import "reviews";
 @import "certificates";
-@import "water";
-@import "roof";
 @import "cooperation";
 @import "gallery";
 @import "footer";
@@ -172,6 +167,18 @@ body {
 img {
   width: 100%;
   height: auto;
+}
+
+.devgen a {
+  font-family: $font_text;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: -.02em;
+  color: rgba(0, 0, 0, 0.7);
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 

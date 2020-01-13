@@ -37,7 +37,7 @@ $font_text: 'Montserrat', sans-serif;
     font-size: 40px;
     text-align: center;
     color: #FFFFFF;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .circles {
@@ -102,7 +102,7 @@ $font_text: 'Montserrat', sans-serif;
 
   .order {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
 
@@ -114,7 +114,7 @@ $font_text: 'Montserrat', sans-serif;
       text-transform: uppercase;
       letter-spacing: -.02em;
       color: #fff;
-      margin-right: 20px;
+      margin-right: 40px;
     }
 
     .btn {
